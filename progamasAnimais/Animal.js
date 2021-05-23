@@ -1,5 +1,7 @@
 class Vertebrado{
-    nome;
+    contructor(nome){
+        this.nome=nome;
+    }
     respirar(){
         console.log("este animal",this.nome,"respira");
     }

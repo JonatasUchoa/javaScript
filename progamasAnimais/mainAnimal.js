@@ -5,10 +5,7 @@ const Reptil = require('./Reptil');
 const Mamifero = require('./Mamifero');
 const Ave = require('./Ave');
 
-const leitor = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
+
 
 const listaAnimais = [
     new Peixe ("tambaqui"),
@@ -17,21 +14,5 @@ const listaAnimais = [
     new Mamifero ('gato')
 ]
 
-leitor
-    .question(
-        "digite o nome de um animal vertebrado:\n",
-        animalInformado => {
-            try {
-                animalSelecionado = Peixe.respirar(animalInformado);
-                console.log(animalSelecionado);
-            }catch(e){
-
-            }
-            finally{
-                leitor.close();
-            }
-        }
-
-
-           
-    )
+argv[2]= animalSelecionado = Peixe.listaAnimais(animalInformado);
+console.log(animalSelecionado);
